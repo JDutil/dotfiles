@@ -8,16 +8,11 @@
   'core': {}
   'editor':
     'invisibles': {}
-'release-notes':
-  'viewedVersion': '0.89.0'
-'welcome':
-  'showOnStartup': false
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
+'editor':
+  'showIndentGuide': true
+  'fontFamily': 'Menlo'
+  'fontSize': 15
+  'invisibles': {}
 'core':
   'ignoredNames': [
     '.bundle'
@@ -37,8 +32,13 @@
     'exception-reporting'
     'metrics'
   ]
-'editor':
-  'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 15
-  'invisibles': {}
+'spell-check':
+  'grammars': [
+    'text.plain'
+    'source.gfm'
+    'text.git-commit'
+  ]
+'welcome':
+  'showOnStartup': false
+'release-notes':
+  'viewedVersion': '0.89.0'
