@@ -12,6 +12,7 @@ alias be="bundle exec"
 alias amend="git commit --amend"
 alias head1="git rebase -i HEAD~1"
 alias ext_specs='bundle; be rake test_app; be rspec'
+alias weather='curl http://wttr.in/'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 

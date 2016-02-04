@@ -38,3 +38,15 @@ end
 def r
   reload!
 end
+
+# Spreeworks
+def theme_list
+  puts Themes.all.map(&:basename)
+end
+
+def theme_switch(theme, store)
+  # store = subdomain
+  store = Spree::StoreStorage.unscoped_get_by_subdomain(store)
+  theme_obj = Spree::ThemeStorage.get(store.id, store.theme_id)
+  Spree::ThemeStorage.update(store.id, (theme_obj.basename = theme) && theme_obj)
+end
