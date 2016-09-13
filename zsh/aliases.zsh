@@ -14,12 +14,6 @@ alias head1="git rebase -i HEAD~1"
 alias ext_specs='bundle; be rake test_app; be rspec'
 alias weather='curl http://wttr.in/'
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
 hub_path=$(which hub)
