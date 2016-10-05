@@ -52,3 +52,6 @@ function spush() {
 function spull() {
   git pull --rebase upstream `branch_name`
 }
+
+# Spree
+function fd() {(cd ~/Code/spreeworks/ops && bundle exec bin/fd $*)}
