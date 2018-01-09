@@ -38,6 +38,9 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
 zle -N newtab
 
 bindkey '^[^[[D' backward-word
