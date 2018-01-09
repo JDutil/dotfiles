@@ -4,6 +4,7 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
+export GPG_TTY=$(tty)
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
