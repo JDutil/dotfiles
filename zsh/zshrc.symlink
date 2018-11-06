@@ -55,9 +55,6 @@ unset config_files
 export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="/usr/local/bin:$PATH"
 
-# RBENV
-#eval "$(rbenv init -)"
-
 # ASDF
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
