@@ -19,9 +19,10 @@
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true
+  autosave:
+    enabled: true
   core:
     closeDeletedFileTabs: true
-    closeEmptyWindows: false
     customFileTypes:
       "source.ini": [
         ".buckconfig"
@@ -40,7 +41,6 @@
       "metrics"
       "react"
       "linter-rubocop"
-      "tree-view"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -59,6 +59,7 @@
     ]
   editor:
     fontFamily: "Menlo"
+    fontSize: 16
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
