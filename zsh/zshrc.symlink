@@ -2,9 +2,6 @@
 export ZSH=$HOME/.dotfiles
 
 # Docker
-# export DOCKER_HOST=tcp://$HOST:2376
-# export DOCKER_CERT_PATH=$HOME/.docker/machine/machines/default
-# export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=default
 
 # your project folder that we can `c [tab]` to
@@ -56,3 +53,9 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export PATH="/usr/local/bin:$PATH"
 
 eval "$(direnv hook zsh)"
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# JUUL
+source ~/.juul/aws-environment.sh
