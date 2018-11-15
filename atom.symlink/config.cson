@@ -40,7 +40,6 @@
       "exception-reporting"
       "metrics"
       "react"
-      "linter-rubocop"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -73,6 +72,7 @@
   "linter-rubocop": {}
   "linter-ui-default":
     panelHeight: 301
+    showPanel: true
   nuclide:
     "atom-ide-code-format":
       formatOnType: false
