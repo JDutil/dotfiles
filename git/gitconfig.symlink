@@ -38,3 +38,5 @@
 	required = true
 [user]
 	signingkey = 24EF5AF2E58F93D259256CE64531EEE767C51394
+[commit]
+	gpgsign = true
