@@ -14,7 +14,6 @@ If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read Holman's post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
-<<<<<<< HEAD
 ## install
 
 Run this:
@@ -36,8 +35,6 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
-=======
->>>>>>> c0ba0cc610a17f359d6d33edf6848b8afde79496
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your
