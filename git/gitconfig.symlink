@@ -16,7 +16,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = atom
+	editor = atom --wait
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -31,3 +31,10 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	signingkey = 24EF5AF2E58F93D259256CE64531EEE767C51394
