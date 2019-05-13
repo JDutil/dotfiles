@@ -71,8 +71,7 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 301
-    showPanel: true
+    panelHeight: 300
   nuclide:
     "atom-ide-code-format":
       formatOnType: false

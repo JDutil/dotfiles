@@ -53,5 +53,8 @@ function spull() {
   git pull --rebase upstream `branch_name`
 }
 
+# Ruby
+alias rubo="git status --short | cut -d \" \" -f 3 | xargs rubocop -c .rubocop.yml -a"
+
 # Spree
 function fd() {(cd ~/Code/spreeworks/ops && bundle exec bin/fd $*)}
