@@ -71,14 +71,13 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 300
+    panelHeight: 301
   nuclide:
     "atom-ide-code-format":
       formatOnType: false
     "nuclide-flow": {}
   "prettier-atom":
-    formatOnSaveOptions:
-      enabled: true
+    formatOnSaveOptions: {}
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":

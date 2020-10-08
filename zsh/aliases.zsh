@@ -58,3 +58,10 @@ alias rubo="git status --short | cut -d \" \" -f 3 | xargs rubocop -c .rubocop.y
 
 # Spree
 function fd() {(cd ~/Code/spreeworks/ops && bundle exec bin/fd $*)}
+
+# JUUL
+alias test_compile="RAILS_ENV=test NODE_ENV=production bundle exec rake assets:precompile"
+
+function qad() {
+  git branch -D qa$1-deploy; git checkout -b qa$1-deploy; git push --set-upstream origin qa$1-deploy -f; git checkout -
+}
