@@ -38,7 +38,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	signingkey = 38E8B6550849BECD49D3D5F04EC2060EB61A9A2B
+	signingkey = FBB06F06405473F0
 	name = JDutil
 	email = jeff.dutil@juul.com
 [commit]
