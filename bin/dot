@@ -46,6 +46,9 @@ $ZSH/macos/set-defaults.sh
 # Install homebrew
 $ZSH/homebrew/install.sh 2>&1
 
+#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jdutil/.zprofile
+#[ .. ] eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Upgrade homebrew
 echo "› brew update"
 brew update

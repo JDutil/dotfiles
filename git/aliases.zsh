@@ -6,6 +6,9 @@ then
   alias git=$hub_path
 fi
 
+# Georges St-Pierre
+alias gsp='git add .; git commit -m "S"; fix 2; git push'
+
 # The rest of my fun git aliases
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
