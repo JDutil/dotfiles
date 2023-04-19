@@ -55,11 +55,6 @@ function spull() {
 
 # Ruby
 alias rubo="git status --short | cut -d \" \" -f 3 | xargs rubocop -c .rubocop.yml -a"
-
-# Spree
-function fd() {(cd ~/Code/spreeworks/ops && bundle exec bin/fd $*)}
-
-# JUUL
 alias test_compile="RAILS_ENV=test NODE_ENV=production bundle exec rake assets:precompile"
 
 function qad() {
