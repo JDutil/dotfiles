@@ -14,6 +14,8 @@ brew 'yarn'
 
 cask '1password'
 cask 'firefox'
+cask 'iterm2'
 cask 'google-chrome'
+cask 'steam'
 cask 'visual-studio-code'
 cask 'vlc'
