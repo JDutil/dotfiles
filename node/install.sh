@@ -1,4 +1,6 @@
-if test ! $(which spoof)
+if test ! $(which npm)
 then
-  sudo npm install spoof -g
+  echo "  Installing npm & yarn for you."
+  # pkgx install npm -g
+  # sudo npm install yarn -g
 fi

@@ -38,8 +38,10 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	signingKey = 862015FF315F2D4FD8DB84D91654EE38AFEF7929
-	name = JDutil
-	email = jeff.dutil@juul.com
+	signingkey = 926B5EB16FF1B384
+	name = jdutil@proton.me
+	email = jdutil@proton.me
 [commit]
 	gpgsign = true
+[tag]
+	gpgSign = true
