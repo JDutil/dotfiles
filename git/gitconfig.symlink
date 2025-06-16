@@ -1,19 +1,15 @@
-# Sample gitconfig
-#
-
+# Local/private config goes in the include
+[include]
+        path = ~/.gitconfig.local
 [hub]
         protocol = https
-[user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
-[credential]
-        helper = GIT_CREDENTIAL_HELPER
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+	pushf = push --force-with-lease
 [color]
         diff = auto
         status = auto
@@ -21,7 +17,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+	editor = code --wait
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -34,5 +30,18 @@
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
         #
-        # Setting to git 2.0 default to surpress warning message
-        default = simple
+        # Setting to git 2.0 default to suppress warning message
+	default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	signingkey = 926B5EB16FF1B384
+	name = jdutil@proton.me
+	email = jdutil@proton.me
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

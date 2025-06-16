@@ -1,9 +1,4 @@
-if [[ -n $SSH_CONNECTION ]]; then
-  export PS1='%m:%3~$(git_info_for_prompt)%# '
-else
-  export PS1='%3~$(git_info_for_prompt)%# '
-fi
-
+export GPG_TTY=$(tty)
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
@@ -36,6 +31,9 @@ setopt HIST_REDUCE_BLANKS
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
+
+# Allow [ or ] whereever you want
+unsetopt nomatch
 
 zle -N newtab
 
